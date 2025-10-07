@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "RESTECH",
     images: [
       {
-        url: "https://res.cloudinary.com/temidayo-falomo/image/upload/v1759831192/Screenshot_2025-10-07_at_10.56.32_AM_bqe4co.png",
+        url: "https://res.cloudinary.com/temidayo-falomo/image/upload/v1759831688/restech_mfcwsw.jpg",
         width: 1200,
         height: 630,
         alt: "RESTECH - Coming Soon",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description:
       "Something amazing is coming soon. Stay tuned for updates and be the first to know when we launch.",
     images: [
-      "https://res.cloudinary.com/temidayo-falomo/image/upload/v1759831192/Screenshot_2025-10-07_at_10.56.32_AM_bqe4co.png",
+      "https://res.cloudinary.com/temidayo-falomo/image/upload/v1759831688/restech_mfcwsw.jpg",
     ],
   },
 };
