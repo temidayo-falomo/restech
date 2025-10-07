@@ -16,6 +16,32 @@ export const metadata: Metadata = {
   title: "RESTECH - Coming Soon",
   description:
     "Something amazing is coming soon. Stay tuned for updates and be the first to know when we launch.",
+  openGraph: {
+    title: "RESTECH - Coming Soon",
+    description:
+      "Something amazing is coming soon. Stay tuned for updates and be the first to know when we launch.",
+    url: "https://restech.com",
+    siteName: "RESTECH",
+    images: [
+      {
+        url: "https://res.cloudinary.com/temidayo-falomo/image/upload/v1759831192/Screenshot_2025-10-07_at_10.56.32_AM_bqe4co.png",
+        width: 1200,
+        height: 630,
+        alt: "RESTECH - Coming Soon",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RESTECH - Coming Soon",
+    description:
+      "Something amazing is coming soon. Stay tuned for updates and be the first to know when we launch.",
+    images: [
+      "https://res.cloudinary.com/temidayo-falomo/image/upload/v1759831192/Screenshot_2025-10-07_at_10.56.32_AM_bqe4co.png",
+    ],
+  },
 };
 
 export default function RootLayout({
