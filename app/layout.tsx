@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ResTech - Coming Soon",
+  title: "RESTECH - Coming Soon",
   description:
     "Something amazing is coming soon. Stay tuned for updates and be the first to know when we launch.",
 };

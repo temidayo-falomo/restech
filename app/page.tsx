@@ -46,7 +46,7 @@ export default function Home() {
             </svg>
           </div> */}
           <h1 className="text-5xl md:text-7xl font-bold text-white">
-            ResTech
+            RESTECH
           </h1>
           <p className="text-xl md:text-2xl text-white font-light animate-fade-in-delay">
             Something amazing is coming soon
@@ -122,7 +122,7 @@ export default function Home() {
 
         {/* Footer */}
         <div className="pt-12 text-sm text-white animate-fade-in-delay-4">
-          <p>© 2025 ResTech. All rights reserved.</p>
+          <p>© 2025 RESTECH. All rights reserved.</p>
         </div>
       </div>
     </div>
