@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Aurora from "../components/Aurora";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -16,18 +17,20 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20 flex items-center justify-center p-4 relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-secondary/5 rounded-full blur-3xl animate-pulse delay-500"></div>
+    <div className="min-h-screen bg-black flex items-center justify-center p-4 relative overflow-hidden">
+      {/* Aurora background */}
+      <div className="absolute inset-0">
+        <Aurora
+          colorStops={["#5227FF", "#7cff67", "#5227FF"]}
+          amplitude={1.0}
+          blend={0.5}
+        />
       </div>
 
       <div className="relative z-10 max-w-2xl mx-auto text-center space-y-8">
         {/* Logo/Brand */}
         <div className="space-y-4">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-primary rounded-2xl mb-6 animate-bounce">
+          {/* <div className="inline-flex items-center justify-center w-20 h-20 bg-primary rounded-2xl mb-6 animate-bounce">
             <svg
               className="w-10 h-10 text-primary-foreground"
               fill="none"
@@ -41,18 +44,18 @@ export default function Home() {
                 d="M13 10V3L4 14h7v7l9-11h-7z"
               />
             </svg>
-          </div>
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent animate-fade-in">
+          </div> */}
+          <h1 className="text-5xl md:text-7xl font-bold text-white">
             ResTech
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground font-light animate-fade-in-delay">
+          <p className="text-xl md:text-2xl text-white font-light animate-fade-in-delay">
             Something amazing is coming soon
           </p>
         </div>
 
         {/* Description */}
         <div className="space-y-6 animate-fade-in-delay-2">
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-white leading-relaxed">
             We're working hard to bring you an incredible experience. Stay tuned
             for updates and be the first to know when we launch.
           </p>
@@ -66,7 +69,7 @@ export default function Home() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg border border-border bg-background/50 backdrop-blur-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                  className="flex-1 px-4 py-3 rounded-lg border border-border bg-background/50 backdrop-blur-sm text-foreground placeholder:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
                   required
                 />
                 <button
@@ -118,7 +121,7 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <div className="pt-12 text-sm text-muted-foreground animate-fade-in-delay-4">
+        <div className="pt-12 text-sm text-white animate-fade-in-delay-4">
           <p>© 2025 ResTech. All rights reserved.</p>
         </div>
       </div>
